@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .auth-buttons {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .auth-buttons a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #FFD700;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #00509E;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background-color: #EAF4FF;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            color: #003366;
+        }
+
+        .hero img {
+            max-width: 300px;
+        }
+
+        .search-bar {
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            background-color: #00509E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00509E;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .genres {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .genres h2 {
+            color: #003366;
+        }
+
+        .genres-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .genre-card {
+            background-color: #EAF4FF;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 200px;
+        }
+
+        .genre-card.featured {
+            background-color: #FFD700;
+        }
+
+        .testimonials {
+            background-color: #F7F9FC;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .testimonials h2 {
+            color: #003366;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        .testimonial p {
+            margin: 0.5rem 0;
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+
+        .member-reviews {
+            text-align: center;
+        }
+
+        .member-reviews img {
+            width: 40px;
+            border-radius: 50%;
+            margin-right: -10px;
+        }
+
+        .newsletter {
+            background-color: #00509E;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        footer .footer-grid {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer .footer-grid div {
+            flex: 1;
+            min-width: 200px;
+            text-align: left;
+        }
+
+        footer iframe {
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            border: none;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 0.5rem 0;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Haven</h1>
+        <div class="auth-buttons">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Genres</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>Discover Your Next Favorite Book</h1>
+            <p>Explore thousands of books from various genres at Book Haven. Find the perfect book for every mood!</p>
+        </div>
+        <img src="Download Pile of Books  for free.jpeg" alt="Books">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for books...">
+        <button type="button">Search</button>
+    </div>
+
+    <div class="stats">
+        <div>
+            <h3>24/7</h3>
+            <p>Online Support</p>
+        </div>
+        <div>
+            <h3>10,000+</h3>
+            <p>Books Available</p>
+        </div>
+        <div>
+            <h3>1M+</h3>
+            <p>Happy Readers</p>
+        </div>
+    </div>
+
+    <div class="genres">
+        <h2>Our Popular Genres</h2>
+        <div class="genres-grid">
+            <div class="genre-card">
+                <h3>Fiction</h3>
+                <p>Lose yourself in fictional worlds full of excitement and wonder.</p>
+            </div>
+            <div class="genre-card featured">
+                <h3>Mystery</h3>
+                <p>Unravel thrilling mysteries and keep guessing till the end.</p>
+            </div>
+            <div class="genre-card">
+                <h3>Biography</h3>
+                <p>Read the stories of the lives that inspire the world.</p>
+            </div>
+            <div class="genre-card">
+                <h3>Science Fiction</h3>
+                <p>Explore futuristic adventures and scientific discoveries.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="member-reviews">
+            <h2>What Our Member's Saying About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velita veniam amet faucibus.</p>
+            <div>
+                <img src="Premium Vector _ Young man Face Avater Vector illustration design.jpeg" alt="Member 1">
+                <img src="Profile Picture For Boys Anime, Dark Pfp Icons.jpeg" alt="Member 2">
+                <img src="Woman free icons designed by Prosymbols Premium.jpeg" alt="Member 3">
+                <img src="Fine Hot Black Man PFP.jpeg" alt="Member 4">
+                <p>100+ Reviews</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velita veniam amet faucibus."</p>
+            <p><strong>Jane Cooper</strong></p>
+            <p class="stars">★★★★★</p>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h2>Subscribe To Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Book Haven</h3>
+                <p>Your one-stop shop for all things books.</p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509874!2d-122.41941568468194!3d37.77492957975937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b7aabdbf%3A0xd8e38d57e69e5b0e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1611766966104!5m2!1sen!2sus" allowfullscreen></iframe>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 Book Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
